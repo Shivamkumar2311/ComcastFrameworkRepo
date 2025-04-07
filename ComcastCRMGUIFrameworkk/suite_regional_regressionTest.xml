@@ -4,12 +4,15 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="com.comcast.crm.ContacttestwithPom.CreateContacttest">
+			<parameter name="BROWSER" value="chrome"></parameter>
 				<methods>
 					<include name="createContactWithOrgTest" />
 				</methods>
 			</class>
 
 			<class name="com.comcast.crm.OrgTestWithPom.CreateOrganizationTest">
+						<parameter name="BROWSER" value="edge"></parameter>
+			
 				<methods>
 					<include name="CreateOrg" />
 				</methods>
