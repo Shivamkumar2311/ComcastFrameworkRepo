@@ -40,7 +40,7 @@ public class BaseClass {
 		System.out.println("====connect to DB ,Report config=== ");
 		dlib.getDbConnection();
 
-	}
+	} 
  
 	@Parameters("BROWSER")
 	@BeforeClass(groups = { "smokeTest", "regressionTest" })
