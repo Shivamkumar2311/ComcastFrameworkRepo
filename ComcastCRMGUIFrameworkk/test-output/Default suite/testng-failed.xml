@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.test.Mock">
+      <class name="practice.test.Practice1">
         <methods>
-          <include name="Practice"/>
+          <include name="ninzaHrmTest"/>
         </methods>
-      </class> <!-- practice.test.Mock -->
+      </class> <!-- practice.test.Practice1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

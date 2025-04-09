@@ -1,83 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-07T18:14:56 IST" name="Suite" finished-at="2025-04-07T18:15:32 IST" duration-ms="36013">
+  <suite started-at="2025-04-09T12:53:08 IST" name="Default suite" finished-at="2025-04-09T12:53:37 IST" duration-ms="29016">
     <groups>
-      <group name="regressionTest">
-        <method signature="CreateContacttest.createContactWithOrgTest()[pri:0, instance:com.comcast.crm.ContacttestwithPom.CreateContacttest@6a8658ff]" name="createContactWithOrgTest" class="com.comcast.crm.ContacttestwithPom.CreateContacttest"/>
-      </group> <!-- regressionTest -->
-      <group name="smokeTest">
-        <method signature="CreateOrganizationTest.CreateOrg()[pri:0, instance:com.comcast.crm.OrgTestWithPom.CreateOrganizationTest@69c81773]" name="CreateOrg" class="com.comcast.crm.OrgTestWithPom.CreateOrganizationTest"/>
-      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2025-04-07T18:14:56 IST" name="Test" finished-at="2025-04-07T18:15:32 IST" duration-ms="36013">
-      <class name="com.comcast.crm.OrgTestWithPom.CreateOrganizationTest">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.comcast.crm.OrgTestWithPom.CreateOrganizationTest@69c81773]" started-at="2025-04-07T18:15:16 IST" name="configBC" finished-at="2025-04-07T18:15:18 IST" duration-ms="1724" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-04-09T12:53:08 IST" name="Default test" finished-at="2025-04-09T12:53:37 IST" duration-ms="29016">
+      <class name="practice.test.Practice1">
+        <test-method signature="ninzaHrmTest()[pri:0, instance:practice.test.Practice1@25df00a0]" started-at="2025-04-09T12:53:08 IST" name="ninzaHrmTest" finished-at="2025-04-09T12:53:37 IST" duration-ms="28956" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.OrgTestWithPom.CreateOrganizationTest@69c81773]" started-at="2025-04-07T18:15:18 IST" name="configBM" finished-at="2025-04-07T18:15:23 IST" duration-ms="4949" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="CreateOrg()[pri:0, instance:com.comcast.crm.OrgTestWithPom.CreateOrganizationTest@69c81773]" started-at="2025-04-07T18:15:23 IST" name="CreateOrg" finished-at="2025-04-07T18:15:28 IST" duration-ms="5176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateOrg -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.OrgTestWithPom.CreateOrganizationTest@69c81773]" started-at="2025-04-07T18:15:28 IST" name="configAM" finished-at="2025-04-07T18:15:32 IST" duration-ms="3435" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.OrgTestWithPom.CreateOrganizationTest@69c81773]" started-at="2025-04-07T18:15:32 IST" name="configAC" finished-at="2025-04-07T18:15:32 IST" duration-ms="218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-      </class> <!-- com.comcast.crm.OrgTestWithPom.CreateOrganizationTest -->
-      <class name="com.comcast.crm.ContacttestwithPom.CreateContacttest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.crm.ContacttestwithPom.CreateContacttest@6a8658ff]" started-at="2025-04-07T18:14:56 IST" name="configBS" finished-at="2025-04-07T18:14:56 IST" duration-ms="453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.comcast.crm.ContacttestwithPom.CreateContacttest@6a8658ff]" started-at="2025-04-07T18:14:56 IST" name="configBC" finished-at="2025-04-07T18:15:02 IST" duration-ms="6255" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.ContacttestwithPom.CreateContacttest@6a8658ff]" started-at="2025-04-07T18:15:02 IST" name="configBM" finished-at="2025-04-07T18:15:06 IST" duration-ms="3297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="createContactWithOrgTest()[pri:0, instance:com.comcast.crm.ContacttestwithPom.CreateContacttest@6a8658ff]" started-at="2025-04-07T18:15:06 IST" name="createContactWithOrgTest" finished-at="2025-04-07T18:15:15 IST" duration-ms="9772" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactWithOrgTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.ContacttestwithPom.CreateContacttest@6a8658ff]" started-at="2025-04-07T18:15:15 IST" name="configAM" finished-at="2025-04-07T18:15:16 IST" duration-ms="731" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.ContacttestwithPom.CreateContacttest@6a8658ff]" started-at="2025-04-07T18:15:16 IST" name="configAC" finished-at="2025-04-07T18:15:16 IST" duration-ms="410" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.crm.ContacttestwithPom.CreateContacttest@6a8658ff]" started-at="2025-04-07T18:15:32 IST" name="configAS" finished-at="2025-04-07T18:15:32 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAS -->
-      </class> <!-- com.comcast.crm.ContacttestwithPom.CreateContacttest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- ninzaHrmTest -->
+      </class> <!-- practice.test.Practice1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
