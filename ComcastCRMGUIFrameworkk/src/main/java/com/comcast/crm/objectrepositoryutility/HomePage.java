@@ -17,6 +17,10 @@ public class HomePage {
 	@FindBy(linkText="Products")
 	private WebElement productLink;
 	
+	public WebElement getAdminImg() {
+		return adminImg;
+	}
+
 	public WebElement getProductLink() {
 		return productLink;
 	}

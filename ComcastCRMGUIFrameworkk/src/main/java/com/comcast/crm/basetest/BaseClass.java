@@ -82,7 +82,9 @@ public class BaseClass {
 		System.out.println("===logout===");
 
 		HomePage hp = new HomePage(driver);
-		hp.logout();
+		//hp.logout();
+		hp.getAdminImg().click();
+		hp.getSignOutLink().click();
 	}
 
 	@AfterClass(groups = { "smokeTest", "regressionTest" })
