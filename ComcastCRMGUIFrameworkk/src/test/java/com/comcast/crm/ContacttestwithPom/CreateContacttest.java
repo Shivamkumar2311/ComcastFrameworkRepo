@@ -5,8 +5,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.Status;
 import com.comcast.crm.basetest.BaseClass;
-
+import com.comcast.crm.generic.webdriverutility.UtilityClassObject;
 import com.comcast.crm.objectrepositoryutility.CreatingNewContactPage;
 import com.comcast.crm.objectrepositoryutility.CreatingNewOrganizationPage;
 import com.comcast.crm.objectrepositoryutility.HomePage;
@@ -20,6 +21,9 @@ public class CreateContacttest extends BaseClass {
 
 	public void Createcontact() throws Throwable {
 
+		
+		UtilityClassObject.getTest().log(Status.INFO, "Login");
+
 		String lastname = elib.getDataFromExcel("contact", 4, 2) + jlib.randomNumber();
 
 		HomePage hp = new HomePage(driver);
@@ -27,6 +31,7 @@ public class CreateContacttest extends BaseClass {
 		hp.getContactlink().click();
 
 		// click on create new contact
+		UtilityClassObject.getTest().log(Status.INFO, "creating new contact");
 
 		CreatingNewContactPage cncp = new CreatingNewContactPage(driver);
 		cncp.getCreatenewcontactbtn().click();
@@ -43,7 +48,8 @@ public class CreateContacttest extends BaseClass {
 		String actlastName = cncp.getActLastname().getText();
 		SoftAssert assertobj=new SoftAssert();
 		assertobj.assertEquals(actlastName, lastname);
-				
+		UtilityClassObject.getTest().log(Status.INFO, "Logout");
+	
 	
 
 	}
@@ -51,19 +57,29 @@ public class CreateContacttest extends BaseClass {
 	@Test(groups = {"regressionTest"})
 
 	public void createContactWithSupportDate() throws Throwable {
-		String lastname = elib.getDataFromExcel("contact", 4, 2) + jlib.randomNumber();
+		
+		UtilityClassObject.getTest().log(Status.INFO, "Login");
 
+		String lastname = elib.getDataFromExcel("contact", 4, 2) + jlib.randomNumber();
+		
+		UtilityClassObject.getTest().log(Status.INFO, "navigate to contact link");
+
+	
 		HomePage hp = new HomePage(driver);
-		// click on link
 		hp.getContactlink().click();
 
 		// click on create new contact
+         
+		UtilityClassObject.getTest().log(Status.INFO, "creating new contact");
 
 		CreatingNewContactPage cncp = new CreatingNewContactPage(driver);
 		cncp.getCreatenewcontactbtn().click();
 
 		// enter details
 		cncp.getLastnameedt().sendKeys(lastname);
+
+		
+		UtilityClassObject.getTest().log(Status.INFO, "added date");
 
 		String startdate = jlib.getSystemDateYYYYDDMM();
 		String endDate = jlib.getRequiredDateYYYYDDMM(30);
@@ -75,7 +91,7 @@ public class CreateContacttest extends BaseClass {
 		cncp.getEnddateedt().sendKeys(endDate);
 
 		cncp.getSavebtn().click();
-		System.out.println("saved date");
+		
 		String actualStartDate = cncp.getActStartDate().getText();
 		
 		SoftAssert sobj=new SoftAssert();
@@ -84,11 +100,16 @@ public class CreateContacttest extends BaseClass {
 		String actualenddate =cncp.getActEndDate().getText();
 		sobj.assertEquals(actualenddate, endDate);
 
+		UtilityClassObject.getTest().log(Status.INFO, "Logout");
+
 
 	}
 
 	@Test(groups = {"regressionTest"})
 	public void createContactWithOrgTest() throws Throwable {
+		
+		UtilityClassObject.getTest().log(Status.INFO, "Login");
+
 		// getting data from excel
 		String orgname = elib.getDataFromExcel("contact", 7, 2) + jlib.randomNumber();
 		String contactlastname = elib.getDataFromExcel("contact", 7, 3) + jlib.randomNumber();
@@ -143,6 +164,7 @@ public class CreateContacttest extends BaseClass {
 		SoftAssert sobj=new SoftAssert();
 		sobj.assertEquals(actOrgName, orgname);
 		sobj.assertAll();
+		UtilityClassObject.getTest().log(Status.INFO, "Logout");
 
 	}
 
